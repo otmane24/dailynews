@@ -1,16 +1,31 @@
-# dailynews
+## Prerequisites
 
-A new Flutter project.
+- Flutter SDK ("Using Flutter 3.24.3 • channel stable")
+- Dart SDK ("Dart version 3.5.3")
+- Android Studio or VS Code with Flutter plugin
 
-## Getting Started
+## Run App
 
-This project is a starting point for a Flutter application.
+1. Clone the repository:
 
-A few resources to get you started if this is your first Flutter project:
+```bash
+    git clone https://github.com/otmane24/DuoChat.git
+```
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+2. Navigate to the project directory:
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+```bash
+   cd repository
+```
+
+3. Get the dependencies:
+
+```bash
+    flutter pub get
+```
+
+4. Run the app in Device/Emulator:
+
+```bash
+    flutter run
+```

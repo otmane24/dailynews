@@ -1,45 +1,19 @@
 // Box Hive
-import 'dart:io';
 
-import '../../../assistant_methode/hivebase.dart';
+const newsBoxHive = "news";
 
-const settingsBoxHive = "settings";
-const driverBoxHive = "driver";
-const bgNotificationBox = "backgroundNotificationBox";
 // Hive Key
-const driverHiveKey = "RiderKey";
-const departureStationHiveKey = "departureStationKey";
-const arrivalStattionHiveKey = "arrivalStattionKey";
-const tokenHiveKey = "TokenKey";
-const languageHiveKey = "LanguageKey";
-const onBordingHiveKey = "onBordingKey";
-const pandingHiveKey = "pandingKey";
-const loginHiveKey = "loginKey";
-const completeProfileHiveKey = "completeProfileKey";
-const bgNotificationHiveKey = "bgNotificationKey";
+const newsHiveKey = "NewsKey";
+
 // Path assets
 const pngsPath = 'assets/pngs';
 const svgsPath = 'assets/svgs';
 const gifsPath = 'assets/gifs';
 
 //Base Url
-String baseUrl = '';
+String baseUrl = 'https://newsapi.org/v2';
 
-//Token FCM
-String? tokenFcm;
-
-// Device info
-String? brand;
-String? model;
-String? version;
-//
-// List of languages
-List<Map<String, String>> languages = [
-  {'name': 'ar', 'flag': '🇩🇿'},
-  {'name': 'fr', 'flag': '🇫🇷'},
-  {'name': 'en', 'flag': '🇬🇧'},
-];
-
-// Map of language
-
-Map<String, String>? selectedLanguage;
+// key Api
+const String apiKey = "544495331d7a46e68bee3e8cd5ca3db7";
+// 
+int nbrNews = 0;

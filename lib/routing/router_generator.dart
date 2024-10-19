@@ -1,4 +1,5 @@
 import 'package:dailynews/screen/home/home_screen.dart';
+import 'package:dailynews/screen/on_boarding/on_boarding_screen.dart';
 import 'package:flutter/material.dart';
 
 import '../app/app.dart';
@@ -11,7 +12,10 @@ class RouterGenerator {
         return MaterialPageRoute(
           builder: (_) => const HomeScreen(),
         );
-
+   case AppRouter.onBoardingRouter:
+        return MaterialPageRoute(
+          builder: (_) => const OnBoardingScreen(),
+        );
       default:
         return MaterialPageRoute(
           builder: (_) => const MyApp(),
