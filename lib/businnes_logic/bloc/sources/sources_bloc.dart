@@ -1,13 +1,10 @@
 import 'package:bloc/bloc.dart';
-
 import 'package:dailynews/data/repository/sources_repository.dart';
 import 'package:dailynews/models/source_model.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
-import 'package:meta/meta.dart';
-    part 'sources_bloc.freezed.dart';
+part 'sources_bloc.freezed.dart';
 part 'sources_event.dart';
 part 'sources_state.dart';
-
 class SourcesBloc extends Bloc<SourcesEvent, SourcesState> {
   final SourcesRepository sourcesRepository;
   SourcesBloc(this.sourcesRepository) : super(const SourcesState.initial()) {

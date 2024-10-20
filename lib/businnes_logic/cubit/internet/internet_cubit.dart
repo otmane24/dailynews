@@ -12,7 +12,7 @@ class InternetCubit extends Cubit<InternetState> {
   StreamSubscription? streamSubscription;
   InternetCubit() : super(const InternetState.initial()) {
     streamSubscription = connectivity.onConnectivityChanged.listen((event) {
-      print("state internet event $event");
+      
       if (event[0] == ConnectivityResult.mobile ||
           event[0] == ConnectivityResult.wifi) {
         emit(const InternetState.onState());

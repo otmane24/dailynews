@@ -27,7 +27,7 @@ class NewsWebService {
 
       return response;
     } on DioException catch (e) {
-      print("error webservice $e");
+      
       if (e.response != null) {
         return e.response!;
       } else {

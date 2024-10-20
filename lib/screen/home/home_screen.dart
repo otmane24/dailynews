@@ -466,8 +466,6 @@ class _HomeScreenState extends State<HomeScreen> {
                                                 BlocBuilder<StateCubit, bool>(
                                                   bloc: stateListNewsCubit,
                                                   builder: (context, state) {
-                                                    print(
-                                                        "lest new ${newsList.length}");
                                                     return ListView.separated(
                                                         physics:
                                                             const NeverScrollableScrollPhysics(),
